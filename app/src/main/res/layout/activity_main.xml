@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context="com.example.slp.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="STATUS"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvMeC"
+        android:visibility="invisible"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your turn score:0"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvMeO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your overall score:0"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvCompO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer's overall score:0"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:orientation="horizontal">
+
+     <Button
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="HOLD"
+         android:id="@+id/hold"
+         />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/roll"
+            android:text="ROLL"
+            />
+
+       <Button
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/reset"
+           android:text="RESET"/>
+
+    </LinearLayout>
+</LinearLayout>
